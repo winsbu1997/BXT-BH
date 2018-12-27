@@ -203,7 +203,6 @@ C:\Users\tang duong\Documents\Visual Studio 2015\Projects\CNPM-QLBH\CNPM-QLBH\ob
 C:\Users\tang duong\Documents\Visual Studio 2015\Projects\CNPM-QLBH\CNPM-QLBH\obj\Debug\CNPM_QLBH.GUI.BanHang.resources
 C:\Users\tang duong\Documents\Visual Studio 2015\Projects\CNPM-QLBH\CNPM-QLBH\obj\Debug\CNPM_QLBH.GUI.ucBanAn.resources
 C:\Users\tang duong\Documents\Visual Studio 2015\Projects\CNPM-QLBH\CNPM-QLBH\obj\Debug\CNPM_QLBH.GUI.ucMatHang.resources
-C:\Users\tang duong\Documents\Visual Studio 2015\Projects\CNPM-QLBH\CNPM-QLBH\obj\Debug\CNPM-QLBH.csprojResolveAssemblyReference.cache
 C:\Users\tang duong\Documents\Visual Studio 2015\Projects\CNPM-QLBH\CNPM-QLBH\bin\Debug\DevExpress.XtraScheduler.v16.1.Core.dll
 C:\Users\tang duong\Documents\Visual Studio 2015\Projects\CNPM-QLBH\CNPM-QLBH\bin\Debug\DevExpress.XtraScheduler.v16.1.dll
 C:\Users\tang duong\Documents\Visual Studio 2015\Projects\CNPM-QLBH\CNPM-QLBH\bin\Debug\DevExpress.XtraScheduler.v16.1.xml
@@ -216,3 +215,4 @@ C:\Users\tang duong\Documents\Visual Studio 2015\Projects\CNPM-QLBH\CNPM-QLBH\bi
 C:\Users\tang duong\Documents\Visual Studio 2015\Projects\CNPM-QLBH\CNPM-QLBH\bin\Debug\es\DevExpress.XtraScheduler.v16.1.Core.resources.dll
 C:\Users\tang duong\Documents\Visual Studio 2015\Projects\CNPM-QLBH\CNPM-QLBH\bin\Debug\ja\DevExpress.XtraScheduler.v16.1.Core.resources.dll
 C:\Users\tang duong\Documents\Visual Studio 2015\Projects\CNPM-QLBH\CNPM-QLBH\bin\Debug\ru\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+C:\Users\tang duong\Documents\Visual Studio 2015\Projects\CNPM-QLBH\CNPM-QLBH\obj\Debug\CNPM-QLBH.csprojResolveAssemblyReference.cache

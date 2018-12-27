@@ -61,8 +61,8 @@ namespace CNPM_QLBH.GUI
         private void Binding()
         {
             CHITIETNHAP tg = GetChiTietNhapByID();
-            txtTongTien.Text = ((int)Provider.PhieuNhap.TONGTIEN).ToString("N0");
-            txtChiPhi.Text = ((int)Provider.PhieuNhap.TONGTIEN).ToString("N0");
+            txtTongTien.Text = ((int)Provider.phieunhap.TONGTIEN).ToString("N0");
+            txtChiPhi.Text = ((int)Provider.phieunhap.TONGTIEN).ToString("N0");
 
             int id = (int)cbxMatHang.EditValue;
             txtDonViTinh.Text = db.MATHANGs.Where(p => p.ID == id).FirstOrDefault().DONVITINH;
@@ -96,7 +96,7 @@ namespace CNPM_QLBH.GUI
                 ans.SOLUONG = (int)txtSoLuong.Value;
                 ans.DONGIA = Int32.Parse(txtDonGia.Text);
                 ans.THANHTIEN = ans.SOLUONG * ans.DONGIA;
-                ans.PHIEUNHAPID = Provider.PhieuNhap.ID;
+                ans.PHIEUNHAPID = Provider.phieunhap.ID;
             }
             catch { }
 
@@ -144,7 +144,7 @@ namespace CNPM_QLBH.GUI
             cbxNhanVien.Properties.ValueMember = "ID";
 
             cbxNhanVien.Enabled = false;
-            cbxNhanVien.EditValue = Provider.NhanVien.ID;
+            cbxNhanVien.EditValue = Provider.nhanvien.ID;
 
             cbxMatHang.Properties.DataSource = db.MATHANGs.Select(p => new { ID = p.ID, Ten = p.TEN }).ToList();
             cbxMatHang.Properties.DisplayMember = "Ten";
@@ -155,7 +155,7 @@ namespace CNPM_QLBH.GUI
         private void LoadDanhSachChiTietNhap()
         {
             int i = 0;
-            var listChiTietNhap = (db.CHITIETNHAPs.Where(p => p.PHIEUNHAPID == Provider.PhieuNhap.ID).ToList()
+            var listChiTietNhap = (db.CHITIETNHAPs.Where(p => p.PHIEUNHAPID == Provider.phieunhap.ID).ToList()
                                   .Select(p => new
                                   {
                                       STT = ++i,
@@ -186,7 +186,7 @@ namespace CNPM_QLBH.GUI
         private void NhapHang_Load(object sender, EventArgs e)
         {
             LoadInitControl();
-            if (Provider.PhieuNhap.ID == 0)
+            if (Provider.phieunhap.ID == 0)
             {
                 Dis_En1(true);
                 dateNgayNhap.DateTime = DateTime.Now;
@@ -213,7 +213,7 @@ namespace CNPM_QLBH.GUI
             try
             {
                 db.SaveChanges();
-                Provider.PhieuNhap = pn;
+                Provider.phieunhap = pn;
                 MessageBox.Show("Lập phiếu nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);              
                 LoadPhieuNhap();
             }
@@ -230,7 +230,7 @@ namespace CNPM_QLBH.GUI
 
             try
             {
-                foreach (var item in db.CHITIETNHAPs.Where(p => p.PHIEUNHAPID == Provider.PhieuNhap.ID).ToList())
+                foreach (var item in db.CHITIETNHAPs.Where(p => p.PHIEUNHAPID == Provider.phieunhap.ID).ToList())
                 {
                     KHO kho = db.KHOes.Where(p => p.MATHANGID == item.MATHANGID).FirstOrDefault();
                     kho.SOLUONG += item.SOLUONG;
@@ -240,7 +240,7 @@ namespace CNPM_QLBH.GUI
             catch { }
             finally
             {
-                Provider.PhieuNhap = new PHIEUNHAP();
+                Provider.phieunhap = new PHIEUNHAP();
             }
         }
         #region Sự kiện chi tiết nhập
@@ -261,7 +261,7 @@ namespace CNPM_QLBH.GUI
                 {
                     db.SaveChanges();
 
-                    Provider.PhieuNhap.TONGTIEN += moi.SOLUONG * moi.DONGIA;
+                    Provider.phieunhap.TONGTIEN += moi.SOLUONG * moi.DONGIA;
                     db.SaveChanges();
 
                     MessageBox.Show("Thêm thông tin chi tiết nhập thành công",
@@ -295,7 +295,7 @@ namespace CNPM_QLBH.GUI
 
             try
             {
-                Provider.PhieuNhap.TONGTIEN -= cu.SOLUONG * cu.DONGIA;
+                Provider.phieunhap.TONGTIEN -= cu.SOLUONG * cu.DONGIA;
                 db.CHITIETNHAPs.Remove(cu);
                 db.SaveChanges();
 
@@ -318,7 +318,7 @@ namespace CNPM_QLBH.GUI
         {
             try
             {
-                int ID = (int)Provider.PhieuNhap.ID;
+                int ID = (int)Provider.phieunhap.ID;
                 PHIEUNHAP hd = db.PHIEUNHAPs.Where(p => p.ID == ID).FirstOrDefault();
                 FrmRpPhieuNhap form = new FrmRpPhieuNhap(hd);
                 form.ShowDialog();

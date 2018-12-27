@@ -334,7 +334,7 @@ namespace CNPM_QLBH.GUI
                     HOADONBAN hd = new HOADONBAN();
                     hd.NGAYBAN = DateTime.Now;
                     hd.TONGTIEN = 0;
-                    hd.NHANVIENID = Provider.NhanVien.ID;
+                    hd.NHANVIENID = Provider.nhanvien.ID;
                     hd.KHUYENMAI = 0;
                     db.HOADONBANs.Add(hd);
                     db.SaveChanges();

@@ -156,7 +156,7 @@ namespace CNPM_QLBH.GUI
         }
         private void LoadDanhSachBanAn()
         {
-            string keyWord = txtTimKiem.Text.ToUpper();
+            string key = txtTimKiem.Text.ToUpper();
             int i = 0;
             var listBANAN = db.BANANs.ToList()
                               .Select(p => new
@@ -170,7 +170,7 @@ namespace CNPM_QLBH.GUI
                               .ToList();
 
             dgvBANANMain.DataSource = listBANAN.ToList()
-                                         .Where(p => p.TEN.ToUpper().Contains(keyWord))
+                                         .Where(p => p.TEN.ToUpper().Contains(key) || p.VITRI.ToUpper().Contains(key) || p.KHUVUCBAN.ToUpper().Contains(key))
                                          .Select(p => new
                                          {
                                              ID = p.ID,

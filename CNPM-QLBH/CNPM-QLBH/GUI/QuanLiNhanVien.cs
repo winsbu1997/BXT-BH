@@ -241,7 +241,7 @@ namespace CNPM_QLBH.GUI
         {
             if (CheckLuaChon() == false) return;
             NHANVIEN nv = DanhSachNhanVienByID();
-            if (nv.CHUCVU == 0 && nv.TAIKHOAN == Provider.NhanVien.TAIKHOAN)
+            if (nv.CHUCVU == 0 && nv.TAIKHOAN == Provider.nhanvien.TAIKHOAN)
             {
                 MessageBox.Show("Bạn không được phép xóa chính mình", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

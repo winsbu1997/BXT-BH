@@ -269,7 +269,7 @@
             this.txtTenTaiKhoan.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtTenTaiKhoan.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenTaiKhoan.ForeColor = System.Drawing.Color.Fuchsia;
-            this.txtTenTaiKhoan.Location = new System.Drawing.Point(1302, 111);
+            this.txtTenTaiKhoan.Location = new System.Drawing.Point(1254, 108);
             this.txtTenTaiKhoan.Name = "txtTenTaiKhoan";
             this.txtTenTaiKhoan.Size = new System.Drawing.Size(73, 28);
             this.txtTenTaiKhoan.TabIndex = 5;
@@ -293,6 +293,7 @@
             this.Name = "FrmMain";
             this.Ribbon = this.ribbonControl1;
             this.Text = "Phần Mềm Bán Hàng";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);

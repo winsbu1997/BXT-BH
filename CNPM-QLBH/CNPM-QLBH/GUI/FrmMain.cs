@@ -18,9 +18,10 @@ namespace CNPM_QLBH
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            txtTenTaiKhoan.Text = Provider.NhanVien.TAIKHOAN;
-            if (Provider.NhanVien.CHUCVU == 1) rbQuanLy.Visible = false;
+            txtTenTaiKhoan.Text = Provider.nhanvien.TAIKHOAN;
+            if (Provider.nhanvien.CHUCVU == 1) rbQuanLy.Visible = false;
             else rbQuanLy.Visible = true;
+            txtTenTaiKhoan.Location = new Point(ribbonControl1.Size.Width - 150, txtTenTaiKhoan.Location.Y);
 
             panelMain.Controls.Clear();
             BanHang uc = new BanHang();
@@ -119,6 +120,12 @@ namespace CNPM_QLBH
             GUI.ThongKeMonAn uc = new GUI.ThongKeMonAn();
             uc.Dock = DockStyle.Fill;
             panelMain.Controls.Add(uc);
+        }
+
+        private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Bạn có muốn thoát chương trình ?", "Thông báo !", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.No) e.Cancel = true;
         }
     }
 }

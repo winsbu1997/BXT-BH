@@ -125,7 +125,7 @@ namespace CNPM_QLBH.GUI
                                 VITRI = p.VITRI
                             }).ToList();
             dgvKhuVucMain.DataSource = listKV.ToList()
-                                     .Where(p => p.TEN.ToUpper().Contains(key))
+                                     .Where(p => p.TEN.ToUpper().Contains(key) || p.VITRI.ToUpper().Contains(key))
                                      .Select(p => new
                                      {
                                          ID = p.ID,

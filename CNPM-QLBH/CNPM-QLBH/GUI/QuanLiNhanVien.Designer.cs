@@ -426,7 +426,7 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
             this.btnHuy.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btnHuy.Location = new System.Drawing.Point(491, 4);
@@ -439,7 +439,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.btnLuu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
             this.btnLuu.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btnLuu.Location = new System.Drawing.Point(370, 4);
@@ -452,7 +452,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.btnThem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btnThem.Location = new System.Drawing.Point(7, 4);
@@ -465,7 +465,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.btnXoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btnXoa.Location = new System.Drawing.Point(249, 4);
@@ -478,7 +478,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.btnSua.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btnSua.Location = new System.Drawing.Point(128, 4);

@@ -22,7 +22,7 @@ namespace CNPM_QLBH.GUI
 
         private bool Check()
         {
-            NHANVIEN nv = Provider.NhanVien;
+            NHANVIEN nv = Provider.nhanvien;
             if (txtMatKhauCu.Text != nv.MATKHAU)
             {
                 MessageBox.Show("Mật khẩu cũ không chính xác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -45,7 +45,7 @@ namespace CNPM_QLBH.GUI
 
         private void btnDoiMatKhau_Click(object sender, EventArgs e)
         {
-            NHANVIEN nv = Provider.NhanVien;
+            NHANVIEN nv = Provider.nhanvien;
             if (Check() == false) return;
             try
             {

@@ -71,8 +71,8 @@ namespace CNPM_QLBH
         #endregion
 
         #region Lưu tạm 
-        public static NHANVIEN NhanVien = db.NHANVIENs.FirstOrDefault();
-        public static PHIEUNHAP PhieuNhap = new PHIEUNHAP();
+        public static NHANVIEN nhanvien = db.NHANVIENs.FirstOrDefault();
+        public static PHIEUNHAP phieunhap = new PHIEUNHAP();
         public static List<Report_Viewer.HoaDonData> data = new List<Report_Viewer.HoaDonData>();
         #endregion
 

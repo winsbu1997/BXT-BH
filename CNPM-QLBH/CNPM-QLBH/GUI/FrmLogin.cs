@@ -59,7 +59,7 @@ namespace CNPM_QLBH.GUI
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
 
-            Provider.NhanVien = db.NHANVIENs.Where(p => p.TAIKHOAN == taikhoan && p.MATKHAU == matkhau).FirstOrDefault();
+            Provider.nhanvien = db.NHANVIENs.Where(p => p.TAIKHOAN == taikhoan && p.MATKHAU == matkhau).FirstOrDefault();
 
             FrmMain form = new FrmMain();
             this.Hide();
